@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cloudflare (DoH)",
+    "name": "Cloudflare",
     "url": "https://cloudflare-dns.com/dns-query"
   }
 ]

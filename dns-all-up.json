@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cloudflare (Varsayılan)",
+    "name": "Cloudflare",
     "ip": "1.1.1.1",
     "type": "standard",
     "features": [
@@ -8,24 +8,24 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 4,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
   {
-    "name": "Google (Varsayılan)",
+    "name": "Google",
     "ip": "8.8.8.8",
     "type": "standard",
     "features": [
       "stable"
     ],
     "status": "up",
-    "response_ms": 13,
+    "response_ms": 18,
     "blocks_ads": false,
     "blocks_malware": false
   },
   {
-    "name": "Quad9 (Zararlı Yazılım Engelleme)",
+    "name": "Quad9",
     "ip": "9.9.9.9",
     "type": "filtering",
     "features": [
@@ -33,12 +33,12 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 9,
     "blocks_ads": false,
     "blocks_malware": false
   },
   {
-    "name": "AdGuard DNS (Reklam Engelleme)",
+    "name": "AdGuard DNS",
     "ip": "94.140.14.14",
     "type": "filtering",
     "features": [
@@ -46,12 +46,12 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 205,
+    "response_ms": 169,
     "blocks_ads": true,
     "blocks_malware": false
   },
   {
-    "name": "Cloudflare (Zararlı Yazılım Engelleme)",
+    "name": "Cloudflare",
     "ip": "1.1.1.2",
     "type": "filtering",
     "features": [
@@ -59,12 +59,12 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 3,
+    "response_ms": 4,
     "blocks_ads": false,
     "blocks_malware": true
   },
   {
-    "name": "Cloudflare (DoH)",
+    "name": "Cloudflare",
     "ip": null,
     "type": "doh",
     "url": "https://cloudflare-dns.com/dns-query",
@@ -73,7 +73,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 45,
+    "response_ms": 42,
     "blocks_ads": false,
     "blocks_malware": false
   }
