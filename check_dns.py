@@ -73,8 +73,8 @@ def generate_new_readme(results):
     table_body = ""
     for res in sorted(results, key=lambda x: (x['status'] == 'down', x['response_ms'])):
         status_icon = "✅" if res['status'] == 'up' else "❌"
-        ad_block_icon = "✅" if res.get('blocks_ads') else ""❌""
-        malware_block_icon = "✅" if res.get('blocks_malware') else ""❌""
+        ad_block_icon = "✅" if res.get('blocks_ads') else "❌"
+        malware_block_icon = "✅" if res.get('blocks_malware') else "❌"
         address = f"`{res['ip']}`" if res['type'] == 'standard' or res['type'] == 'filtering' else f"`{res['url']}`"
         
         table_body += f"| {res['name']} | `{res['type']}` | {address} | {status_icon} | {res['response_ms'] if res['status'] == 'up' else '-'} | {ad_block_icon} | {malware_block_icon} |\n"
