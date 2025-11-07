@@ -1,3 +1,14 @@
+`2025-11-07 21:07:52 UTC`
+| Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| Cloudflare (Varsayılan) | `standard` | `1.1.1.1` | ✅ Up | 10 | ➖ No | ➖ No |
+| Cloudflare (Zararlı Yazılım Engelleme) | `filtering` | `1.1.1.2` | ✅ Up | 10 | ➖ No | ☣️ Yes |
+| Google (Varsayılan) | `standard` | `8.8.8.8` | ✅ Up | 11 | ➖ No | ➖ No |
+| Quad9 (Zararlı Yazılım Engelleme) | `filtering` | `9.9.9.9` | ✅ Up | 11 | ➖ No | ➖ No |
+| AdGuard DNS (Reklam Engelleme) | `filtering` | `94.140.14.14` | ✅ Up | 193 | 🛡️ Yes | ➖ No |
+| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ Up | 217 | ➖ No | ➖ No |
+| AdGuard DNS (DoH) | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ Down | - | ➖ No | ➖ No |
+
 # Awesome-Resolver 🛡️
 
 A live, automatically tested, and updated list of public DNS servers.
