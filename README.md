@@ -4,7 +4,7 @@ A live, automatically tested, and updated list of public DNS servers.
 
 This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 12 hours and publishes the results.
 
-Last Updated: `2025-11-07 21:23:13 UTC`
+Last Updated: `2025-11-08 01:44:08 UTC`
 
 ## 📊 Live DNS Status Table
 
@@ -12,10 +12,10 @@ Last Updated: `2025-11-07 21:23:13 UTC`
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | Cloudflare | `standard` | `1.1.1.1` | ✅ | 3 | ❌ | ❌ |
 | Cloudflare | `filtering` | `1.1.1.2` | ✅ | 4 | ❌ | ✅ |
-| Quad9 | `filtering` | `9.9.9.9` | ✅ | 9 | ❌ | ❌ |
+| Quad9 | `filtering` | `9.9.9.9` | ✅ | 8 | ❌ | ❌ |
 | Google | `standard` | `8.8.8.8` | ✅ | 18 | ❌ | ❌ |
-| Cloudflare | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 42 | ❌ | ❌ |
-| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 169 | ✅ | ❌ |
+| Cloudflare | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 39 | ❌ | ❌ |
+| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 171 | ✅ | ❌ |
 | AdGuard DNS | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ | - | ❌ | ❌ |
 
 

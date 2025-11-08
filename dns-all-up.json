@@ -33,7 +33,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 8,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -46,7 +46,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 169,
+    "response_ms": 171,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -73,7 +73,7 @@
       "doh"
     ],
     "status": "up",
-    "response_ms": 42,
+    "response_ms": 39,
     "blocks_ads": false,
     "blocks_malware": false
   }
