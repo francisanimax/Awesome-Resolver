@@ -1,160 +1,197 @@
 servers:
+  # Cloudflare
   - name: "Cloudflare"
     ip: "1.1.1.1"
     type: "standard"
     features: ["privacy", "fast"]
-
-  - name: "Google"
-    ip: "8.8.8.8"
+  - name: "Cloudflare (Secondary)"
+    ip: "1.0.0.1"
     type: "standard"
-    features: ["stable"]
-
-  - name: "OpenDNS"
-    ip: "208.67.222.222"
-    type: "standard"
-    features: ["stable", "security"]
-    
-  - name: "Neustar"
-    ip: "156.154.70.1"
-    type: "standard"
-    features: ["stable", "security"]
-
-  - name: "Quad9"
-    ip: "9.9.9.9"
-    type: "filtering"
-    features: ["privacy", "malware-block"]
-  
+    features: ["privacy", "fast"]
   - name: "Cloudflare (Malware Block)"
     ip: "1.1.1.2"
     type: "filtering"
     features: ["privacy", "malware-block"]
-    
-  - name: "CleanBrowsing (Security)"
-    ip: "185.228.168.9"
-    type: "filtering"
-    features: ["privacy", "malware-block"]
-    
-  - name: "Comodo Secure DNS"
-    ip: "8.26.56.26"
-    type: "filtering"
-    features: ["security", "malware-block"]
-
-  - name: "AdGuard DNS"
-    ip: "94.140.14.14"
-    type: "filtering"
-    features: ["privacy", "ad-block"]
-
   - name: "Cloudflare (Family)"
     ip: "1.1.1.3"
     type: "filtering"
     features: ["privacy", "malware-block", "family-block"]
-
-  - name: "AdGuard DNS (Family)"
-    ip: "94.140.14.15"
-    type: "filtering"
-    features: ["privacy", "ad-block", "malware-block", "family-block"]
-
-  - name: "OpenDNS (FamilyShield)"
-    ip: "208.67.222.123"
-    type: "filtering"
-    features: ["stable", "family-block"]
-    
-  - name: "CleanBrowsing (Family)"
-    ip: "185.228.168.168"
-    type: "filtering"
-    features: ["privacy", "malware-block", "family-block"]
-
-  - name: "DNS.WATCH"
-    ip: "84.200.69.80"
-    type: "standard"
-    features: ["privacy", "no-logs"]
-    
-  - name: "LibreDNS"
-    ip: "116.202.176.26"
-    type: "standard"
-    features: ["privacy", "no-logs"]
-
-  - name: "Digitalcourage"
-    ip: "46.182.19.48"
-    type: "standard"
-    features: ["privacy", "no-logs"]
-    
-  - name: "UncensoredDNS"
-    ip: "91.239.100.100"
-    type: "standard"
-    features: ["privacy", "no-logs"]
-
-  - name: "Yandex.DNS"
-    ip: "77.88.8.8"
-    type: "standard"
-    features: ["stable", "fast-tr"]
-
-  - name: "Yandex.DNS (Safe)"
-    ip: "77.88.8.7"
-    type: "filtering"
-    features: ["stable", "malware-block", "family-block"]
-    
-  - name: "Freenom"
-    ip: "80.80.80.80"
-    type: "standard"
-    features: ["privacy"]
-
   - name: "Cloudflare (DoH)"
     ip: null
     type: "doh"
     url: "https://cloudflare-dns.com/dns-query"
     features: ["privacy", "doh"]
 
+  # Google
+  - name: "Google"
+    ip: "8.8.8.8"
+    type: "standard"
+    features: ["stable"]
+  - name: "Google (Secondary)"
+    ip: "8.8.4.4"
+    type: "standard"
+    features: ["stable"]
   - name: "Google (DoH)"
     ip: null
     type: "doh"
     url: "https://dns.google/dns-query"
     features: ["stable", "doh"]
-    
+
+  # OpenDNS
+  - name: "OpenDNS"
+    ip: "208.67.222.222"
+    type: "standard"
+    features: ["stable", "security"]
+  - name: "OpenDNS (Secondary)"
+    ip: "208.67.220.220"
+    type: "standard"
+    features: ["stable", "security"]
+  - name: "OpenDNS (FamilyShield)"
+    ip: "208.67.222.123"
+    type: "filtering"
+    features: ["stable", "family-block"]
+  - name: "OpenDNS (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://doh.opendns.com/dns-query"
+    features: ["stable", "doh"]
+
+  # Quad9
+  - name: "Quad9"
+    ip: "9.9.9.9"
+    type: "filtering"
+    features: ["privacy", "malware-block"]
   - name: "Quad9 (DoH)"
     ip: null
     type: "doh"
     url: "https://dns.quad9.net/dns-query"
     features: ["privacy", "malware-block", "doh"]
 
+  # AdGuard
+  - name: "AdGuard DNS"
+    ip: "94.140.14.14"
+    type: "filtering"
+    features: ["privacy", "ad-block"]
+  - name: "AdGuard DNS (Family)"
+    ip: "94.140.14.15"
+    type: "filtering"
+    features: ["privacy", "ad-block", "malware-block", "family-block"]
   - name: "AdGuard DNS (DoH)"
     ip: null
     type: "doh"
     url: "https://dns.adguard-dns.com/dns-query"
     features: ["privacy", "ad-block", "doh"]
-    
   - name: "AdGuard DNS (Family DoH)"
     ip: null
     type: "doh"
     url: "https://dns-family.adguard.com/dns-query"
     features: ["privacy", "ad-block", "malware-block", "family-block", "doh"]
 
-  - name: "OpenDNS (DoH)"
-    ip: null
-    type: "doh"
-    url: "https://doh.opendns.com/dns-query"
-    features: ["stable", "doh"]
-    
+  # CleanBrowsing
+  - name: "CleanBrowsing (Security)"
+    ip: "185.228.168.9"
+    type: "filtering"
+    features: ["privacy", "malware-block"]
+  - name: "CleanBrowsing (Family)"
+    ip: "185.228.168.168"
+    type: "filtering"
+    features: ["privacy", "malware-block", "family-block"]
   - name: "CleanBrowsing (Family DoH)"
     ip: null
     type: "doh"
     url: "https://doh.cleanbrowsing.org/doh/family-filter/"
     features: ["privacy", "malware-block", "family-block", "doh"]
-    
   - name: "CleanBrowsing (Ad-Block DoH)"
     ip: null
     type: "doh"
     url: "https://doh.cleanbrowsing.org/doh/adblock-filter/"
     features: ["privacy", "ad-block", "doh"]
-    
-  - name: "LibreDNS (DoH)"
-    ip: null
-    type: "doh"
-    url: "https://doh.libredns.gr/dns-query"
-    features: ["privacy", "no-logs", "doh"]
-    
+
+  # --- YENİ EKLENEN VEYA KORUNAN GÜVENİLİR SUNUCULAR ---
+
+  # Neustar (UltraDNS)
+  - name: "Neustar"
+    ip: "156.154.70.1"
+    type: "standard"
+    features: ["stable", "security"]
+
+  # Comodo Secure DNS
+  - name: "Comodo Secure DNS"
+    ip: "8.26.56.26"
+    type: "filtering"
+    features: ["security", "malware-block"]
+
+  # DNS.WATCH
+  - name: "DNS.WATCH"
+    ip: "84.200.69.80"
+    type: "standard"
+    features: ["privacy", "no-logs"]
+
+  # Yandex.DNS
+  - name: "Yandex.DNS"
+    ip: "77.88.8.8"
+    type: "standard"
+    features: ["stable", "fast-tr"]
+  - name: "Yandex.DNS (Safe)"
+    ip: "77.88.8.7"
+    type: "filtering"
+    features: ["stable", "malware-block", "family-block"]
   - name: "Yandex (Family DoH)"
     ip: null
     type: "doh"
     url: "https://dns.yandex.com/dns-query/family/"
     features: ["stable", "malware-block", "family-block", "doh"]
+
+  # Verisign
+  - name: "Verisign"
+    ip: "64.6.64.6"
+    type: "standard"
+    features: ["stable", "security"]
+  - name: "Verisign (Secondary)"
+    ip: "64.6.65.6"
+    type: "standard"
+    features: ["stable", "security"]
+
+  # Control D
+  - name: "Control D (Unfiltered)"
+    ip: "76.76.2.0"
+    type: "standard"
+    features: ["privacy", "fast"]
+  - name: "Control D (Unfiltered Sec)"
+    ip: "76.76.10.0"
+    type: "standard"
+    features: ["privacy", "fast"]
+  - name: "Control D (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://dns.controld.com/dns-query"
+    features: ["privacy", "doh"]
+
+  # Mullvad
+  - name: "Mullvad (Ad-block)"
+    ip: "193.138.218.74"
+    type: "filtering"
+    features: ["privacy", "ad-block"]
+  - name: "Mullvad (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://doh.mullvad.net/dns-query"
+    features: ["privacy", "ad-block", "doh"]
+
+  # DNS0.eu
+  - name: "DNS0.eu"
+    ip: "193.110.81.0"
+    type: "filtering"
+    features: ["privacy", "malware-block", "eu"]
+  - name: "DNS0.eu (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://doh.dns0.eu/"
+    features: ["privacy", "malware-block", "eu", "doh"]
+
+  # NextDNS (Genel DoH)
+  - name: "NextDNS (DoH)"
+    ip: null
+    type: "doh"
+    url: "https://dns.nextdns.io/dns-query"
+    features: ["privacy", "doh", "customizable"]
