@@ -33,8 +33,9 @@ jobs:
       - name: Force Push Changes
         run: |
           if ! git diff --quiet; then
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
+            # Değişiklik burada: Bot kullanıcısı yerine GitHub hesabınızı kullanın
+            git config --local user.name "${{ github.actor }}"
+            git config --local user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
             
             CURRENT_DATE=$(date -u +'%Y-%m-%d %H:%M:%S %Z')
             git add README.md dns-all-up.json dns-adblock.txt dns-malware-block.txt dns-doh-up.json
