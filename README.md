@@ -4,31 +4,31 @@ A live, automatically tested, and updated list of public DNS servers.
 
 This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 12 hours and publishes the results.
 
-Last Updated: `2025-11-09 06:31:58 UTC`
+Last Updated: `2025-11-09 12:42:12 UTC`
 
 ## 📊 Live DNS Status Table
 
 | Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| Neustar | `standard` | `156.154.70.1` | ✅ | 1 | ❌ | ❌ |
-| Cloudflare (Malware Block) | `filtering` | `1.1.1.2` | ✅ | 2 | ❌ | ✅ |
+| Neustar | `standard` | `156.154.70.1` | ✅ | 2 | ❌ | ❌ |
+| Cloudflare | `standard` | `1.1.1.1` | ✅ | 3 | ❌ | ❌ |
+| Cloudflare (Malware Block) | `filtering` | `1.1.1.2` | ✅ | 3 | ❌ | ✅ |
 | Cloudflare (Family) | `filtering` | `1.1.1.3` | ✅ | 3 | ❌ | ✅ |
-| Cloudflare | `standard` | `1.1.1.1` | ✅ | 5 | ❌ | ❌ |
 | Quad9 | `filtering` | `9.9.9.9` | ✅ | 8 | ❌ | ❌ |
-| CleanBrowsing (Family) | `filtering` | `185.228.168.168` | ✅ | 8 | ❌ | ❌ |
-| Google | `standard` | `8.8.8.8` | ✅ | 9 | ❌ | ❌ |
-| CleanBrowsing (Security) | `filtering` | `185.228.168.9` | ✅ | 9 | ❌ | ❌ |
-| OpenDNS | `standard` | `208.67.222.222` | ✅ | 10 | ❌ | ❌ |
-| OpenDNS (FamilyShield) | `filtering` | `208.67.222.123` | ✅ | 18 | ❌ | ❌ |
+| CleanBrowsing (Security) | `filtering` | `185.228.168.9` | ✅ | 8 | ❌ | ❌ |
+| OpenDNS (FamilyShield) | `filtering` | `208.67.222.123` | ✅ | 10 | ❌ | ❌ |
+| OpenDNS | `standard` | `208.67.222.222` | ✅ | 19 | ❌ | ❌ |
+| Google | `standard` | `8.8.8.8` | ✅ | 20 | ❌ | ❌ |
+| Comodo Secure DNS | `filtering` | `8.26.56.26` | ✅ | 20 | ❌ | ❌ |
+| CleanBrowsing (Family) | `filtering` | `185.228.168.168` | ✅ | 21 | ❌ | ❌ |
 | Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 38 | ❌ | ❌ |
-| DNS.WATCH | `standard` | `84.200.69.80` | ✅ | 151 | ❌ | ❌ |
-| AdGuard DNS (Family) | `filtering` | `94.140.14.15` | ✅ | 170 | ✅ | ❌ |
-| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 172 | ✅ | ❌ |
-| Yandex.DNS | `standard` | `77.88.8.8` | ✅ | 195 | ❌ | ❌ |
-| Yandex.DNS (Safe) | `filtering` | `77.88.8.7` | ✅ | 200 | ❌ | ❌ |
-| Digitalcourage | `standard` | `46.182.19.48` | ✅ | 795 | ❌ | ❌ |
-| Comodo Secure DNS | `filtering` | `8.26.56.26` | ❌ | - | ❌ | ❌ |
+| DNS.WATCH | `standard` | `84.200.69.80` | ✅ | 152 | ❌ | ❌ |
+| AdGuard DNS (Family) | `filtering` | `94.140.14.15` | ✅ | 169 | ✅ | ❌ |
+| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 171 | ✅ | ❌ |
+| Yandex.DNS (Safe) | `filtering` | `77.88.8.7` | ✅ | 201 | ❌ | ❌ |
+| Yandex.DNS | `standard` | `77.88.8.8` | ✅ | 202 | ❌ | ❌ |
 | LibreDNS | `standard` | `116.202.176.26` | ❌ | - | ❌ | ❌ |
+| Digitalcourage | `standard` | `46.182.19.48` | ❌ | - | ❌ | ❌ |
 | UncensoredDNS | `standard` | `91.239.100.100` | ❌ | - | ❌ | ❌ |
 | Freenom | `standard` | `80.80.80.80` | ❌ | - | ❌ | ❌ |
 | Google (DoH) | `doh` | `https://dns.google/dns-query` | ❌ | - | ❌ | ❌ |

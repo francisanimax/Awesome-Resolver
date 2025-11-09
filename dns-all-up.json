@@ -8,7 +8,7 @@
       "fast"
     ],
     "status": "up",
-    "response_ms": 5,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -20,7 +20,7 @@
       "stable"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 20,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -33,7 +33,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 10,
+    "response_ms": 19,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -46,7 +46,7 @@
       "security"
     ],
     "status": "up",
-    "response_ms": 1,
+    "response_ms": 2,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -72,7 +72,7 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 2,
+    "response_ms": 3,
     "blocks_ads": false,
     "blocks_malware": true
   },
@@ -85,7 +85,20 @@
       "malware-block"
     ],
     "status": "up",
-    "response_ms": 9,
+    "response_ms": 8,
+    "blocks_ads": false,
+    "blocks_malware": false
+  },
+  {
+    "name": "Comodo Secure DNS",
+    "ip": "8.26.56.26",
+    "type": "filtering",
+    "features": [
+      "security",
+      "malware-block"
+    ],
+    "status": "up",
+    "response_ms": 20,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -98,7 +111,7 @@
       "ad-block"
     ],
     "status": "up",
-    "response_ms": 172,
+    "response_ms": 171,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -127,7 +140,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 170,
+    "response_ms": 169,
     "blocks_ads": true,
     "blocks_malware": false
   },
@@ -140,7 +153,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 18,
+    "response_ms": 10,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -154,7 +167,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 8,
+    "response_ms": 21,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -167,20 +180,7 @@
       "no-logs"
     ],
     "status": "up",
-    "response_ms": 151,
-    "blocks_ads": false,
-    "blocks_malware": false
-  },
-  {
-    "name": "Digitalcourage",
-    "ip": "46.182.19.48",
-    "type": "standard",
-    "features": [
-      "privacy",
-      "no-logs"
-    ],
-    "status": "up",
-    "response_ms": 795,
+    "response_ms": 152,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -193,7 +193,7 @@
       "fast-tr"
     ],
     "status": "up",
-    "response_ms": 195,
+    "response_ms": 202,
     "blocks_ads": false,
     "blocks_malware": false
   },
@@ -207,7 +207,7 @@
       "family-block"
     ],
     "status": "up",
-    "response_ms": 200,
+    "response_ms": 201,
     "blocks_ads": false,
     "blocks_malware": false
   },
